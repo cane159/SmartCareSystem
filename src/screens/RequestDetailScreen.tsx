@@ -47,7 +47,7 @@ const RequestDetailScreen = ({ navigation, route }: Props) => {
           >{`Description: ${requestDetail.description}`}</Text>
           <Text style={styles.detail}>{`Timestamp: ${moment(
             requestDetail.createdAt,
-          ).format('DD/MMMM/YYYY hh:mm:ss')}`}</Text>
+          ).format('DD/MMMM/YYYY HH:mm:ss')}`}</Text>
         </View>
       </View>
     </MainContainer>
