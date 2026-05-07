@@ -1,0 +1,30 @@
+export default Colors = {
+    /** #E74B9E*/
+    primary: '#E74B9E',
+    /** '#E878B4'*/
+    secondary: '#E878B4',
+    /** '#FFF'*/
+    white: '#FFF',
+    /** '#000'*/
+    black: '#000',
+    /** '#F6F8FA'*/
+    whiteWeak: '#F6F8FA',
+    /** '#EDF1F3'*/
+    borderText: '#EDF1F3',
+    /** '#E90101'*/
+    red: '#E90101',
+    /** '#068428'*/
+    green: '#068428',
+    /** '#00F'*/
+    blue: '#00F',
+    /** '#DFDFDF'*/
+    greyWeak: '#DFDFDF',
+    /** '#F3F3F3'*/
+    borderCard: '#F3F3F3',
+    /** '#7D7C93'*/
+    textBlueWeak: '#7D7C93',
+    /** '#A09FA4'*/
+    grey: '#A09FA4',
+    /** '#F1F5F9'*/
+    pinBackground: '#F1F5F9',
+};
