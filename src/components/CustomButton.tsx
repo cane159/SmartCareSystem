@@ -14,15 +14,21 @@ interface CustomButtonProps {
   style?: StyleProp<ViewStyle> | undefined;
   onPress?: ((event: GestureResponderEvent) => void) | undefined;
   buttonText?: string | undefined;
+  disabled?: boolean | undefined;
 }
 
 const CustomButton: React.FC<CustomButtonProps> = ({
   style,
   onPress,
   buttonText,
+  disabled,
 }) => {
   return (
-    <TouchableOpacity style={[styles.button, style]} onPress={onPress}>
+    <TouchableOpacity
+      style={[styles.button, style]}
+      onPress={onPress}
+      disabled={disabled}
+    >
       <Text>{buttonText}</Text>
     </TouchableOpacity>
   );

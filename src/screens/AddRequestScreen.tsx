@@ -19,11 +19,16 @@ interface AddRequestForm {
 
 const AddRequestScreen = ({ navigation }: Props) => {
   const dispatch = useAppDispatch();
-  const { control, handleSubmit } = useForm<AddRequestForm>({
+  const {
+    control,
+    handleSubmit,
+    formState: { isValid },
+  } = useForm<AddRequestForm>({
     defaultValues: {
       title: '',
       description: '',
     },
+    mode: 'onChange',
   });
 
   const onAddRequest = (data: AddRequestForm) => {
@@ -78,6 +83,7 @@ const AddRequestScreen = ({ navigation }: Props) => {
         <CustomButton
           buttonText="Add request"
           onPress={handleSubmit(onAddRequest)}
+          disabled={!isValid}
         />
       </View>
     </MainContainer>
